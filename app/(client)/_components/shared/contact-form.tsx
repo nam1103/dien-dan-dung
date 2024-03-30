@@ -15,9 +15,10 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { createContact } from "@/lib/contact-service";
-import { useTransition } from "react";
+import { useState } from "react";
 
 export const ContactForm = () => {
+	const [isCreated, setIsCreated] = useState(false);
 	const form = useForm<z.infer<typeof contactSchema>>({
 		resolver: zodResolver(contactSchema),
 		defaultValues: {
@@ -30,10 +31,12 @@ export const ContactForm = () => {
 
 	const onSubmit = async (values: z.infer<typeof contactSchema>) => {
 		const data = await createContact(values);
-		console.log(data);
+		if (data) {
+			setIsCreated(true);
+		}
 	};
 
-	if (form.formState.isSubmitted) {
+	if (isCreated) {
 		return (
 			<div className="bg-green-200 rounded-sm border border-black shadow-md p-2">
 				<h1 className="italic font-semibold text-xl">Thành công!</h1>

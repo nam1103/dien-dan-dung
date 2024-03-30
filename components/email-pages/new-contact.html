@@ -1,0 +1,26 @@
+<!-- new-contact.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Một Khách Hàng Đã Liên Hệ Với Bạn</title>
+		<style>
+			.email {
+			}
+
+			.header {
+				font-size: xx-large;
+			}
+
+			.body {
+				background-color: aquamarine;
+			}
+		</style>
+	</head>
+	<body class="h-full bg-blue-400">
+		<h1 class="header">Một Khách Hàng Đã Liên Hệ Với Bạn</h1>
+		<% if (contact_email) { %>
+		<p class="email"><%= contact_email %></p>
+		<% } %>
+	</body>
+</html>

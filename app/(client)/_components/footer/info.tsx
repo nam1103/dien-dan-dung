@@ -16,7 +16,7 @@ export const InfoSection = () => {
 				Trụ sở: {addresses.office}
 			</p>
 			<div className="flex gap-x-2">
-				<div className="border-l-2 border-l-orange-500" />
+				<div className="border-l-4 border-l-orange-500" />
 				<h2 className="uppercase text-2xl text-white">Giờ làm việc</h2>
 			</div>
 			<p className="text-white text-sm -mt-10">

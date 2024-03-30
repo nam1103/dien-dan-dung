@@ -1,6 +1,3 @@
-import { appInfo, contactInfo } from "@/constants";
-import { Logo } from "./logo";
-
 import { RouteList } from "./route-list";
 import { Header } from "./header";
 

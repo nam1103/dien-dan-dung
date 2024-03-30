@@ -13,7 +13,7 @@ const ClientLayout = ({ children }: ClientLayoutProps) => {
 			<SocialButtons />
 			<ScrollBackButton />
 			<Navbar />
-			{children}
+			<div>{children}</div>
 			<Footer />
 		</div>
 	);

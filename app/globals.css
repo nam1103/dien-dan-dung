@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+:root,
+body {
+	height: 100%;
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -135,4 +141,23 @@
 
 .animate-shake {
 	animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+.ql-editor {
+	font-size: 18px; /* Adjust the font size as needed */
+}
+
+.preview .ql-editor {
+	padding: 0 !important;
+}
+
+.preview .ql-editor h1,
+.preview .ql-editor h2,
+.preview .ql-editor h3,
+.preview .ql-editor h4,
+.preview .ql-editor h5,
+.preview .ql-editor h6,
+.preview .ql-editor ol {
+	color: red !important;
+	font-weight: 600 !important;
 }

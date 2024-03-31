@@ -3,7 +3,7 @@ import { Hero } from "./_components/hero";
 import { ReasonForChoosing } from "./_components/reason-for-choosing";
 import { Services } from "./_components/services";
 
-const GioiThieuPage = () => {
+const SuaNuocPage = () => {
 	return (
 		<div className="w-full">
 			<Hero />
@@ -14,4 +14,4 @@ const GioiThieuPage = () => {
 	);
 };
 
-export default GioiThieuPage;
+export default SuaNuocPage;

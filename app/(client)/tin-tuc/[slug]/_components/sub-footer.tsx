@@ -23,7 +23,7 @@ export const SubFooter = async ({ post }: SubFooterProps) => {
 					<Link
 						href={`/tin-tuc/${repost.slug}`}
 						key={repost.id}
-						className="text-orange-500 text-lg cursor-pointer list-item"
+						className="text-orange-500 text-lg cursor-pointer list-item hover:brightness-125 transition"
 					>
 						{repost.title}
 					</Link>

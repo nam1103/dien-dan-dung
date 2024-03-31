@@ -135,12 +135,34 @@ body {
 	}
 }
 
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+
+	15% {
+		transform: scale(1.1);
+	}
+
+	30% {
+		transform: scale(1.2);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+}
+
 .animate-aura {
 	animation: aura 1s infinite;
 }
 
 .animate-shake {
 	animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+.animate-scale {
+	animation: scale 1s infinite ease-in-out;
 }
 
 .ql-editor {

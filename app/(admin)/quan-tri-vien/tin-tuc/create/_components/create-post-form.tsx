@@ -111,7 +111,7 @@ export const CreatePostForm = ({ categories }: CreatePostFormProps) => {
 								</FormControl>
 								<SelectContent>
 									{categories.map((category) => (
-										<SelectItem value={category.id}>
+										<SelectItem value={category.id} key={category.id}>
 											{category.title}
 										</SelectItem>
 									))}

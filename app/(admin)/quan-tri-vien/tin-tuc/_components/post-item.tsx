@@ -98,7 +98,11 @@ export const PostItem = ({ data }: PostItemProps) => {
 				</DropdownMenu>
 			</div>
 			{data.imageUrls?.[0] ? (
-				<img src={data.imageUrls[0]} className="sm:w-[400px] w-full" />
+				<img
+					src={data.imageUrls[0]}
+					className="sm:w-[400px] w-full"
+					alt="image"
+				/>
 			) : (
 				<div className="sm:w-[400px] w-full h-[200px] gap-x-4 flex items-center p-8 bg-neutral-100 group-hover:text-white group-hover:bg-neutral-400 rounded-lg justify-center">
 					<Image className="h-5 w-5" />

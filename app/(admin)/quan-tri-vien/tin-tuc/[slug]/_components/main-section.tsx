@@ -24,7 +24,7 @@ export const MainSection = ({ data }: MainSectionProps) => {
 		if (searchParams.get("edit")) {
 			setMode(Mode.CHANGE);
 		}
-	}, []);
+	}, [searchParams]);
 
 	return (
 		<div className="w-full space-y-6">

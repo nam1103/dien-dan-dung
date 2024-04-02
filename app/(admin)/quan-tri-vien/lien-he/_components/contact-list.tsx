@@ -33,6 +33,7 @@ export const ContactList = ({ data }: ContactListProps) => {
 		<div className="w-full py-5 space-y-5">
 			{data.map((contact) => (
 				<ContactItem
+					key={contact.id}
 					id={contact.id}
 					phoneNumber={contact.phoneNumber}
 					username={contact.username}

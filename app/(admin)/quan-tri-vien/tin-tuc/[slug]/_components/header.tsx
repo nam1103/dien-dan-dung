@@ -13,7 +13,7 @@ export const Header = ({ title, slug }: HeaderProps) => {
 		<div className="w-full py-7 space-y-2">
 			<div className="w-full flex justify-between">
 				<h1 className="text-neutral-800 text-4xl font-semibold truncate">
-					Bài Viết "{title}"
+					Bài Viết &quot;{title}&quot;
 				</h1>
 				<div className="space-x-2 shrink-0">
 					<Link href={`/tin-tuc/${slug}`}>

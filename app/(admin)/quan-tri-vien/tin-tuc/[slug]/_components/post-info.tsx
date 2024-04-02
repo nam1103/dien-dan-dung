@@ -75,7 +75,7 @@ export const PostInfo = ({ data }: PostInfoProps) => {
 					<AccordionTrigger>Bình luận của khách hàng</AccordionTrigger>
 					<AccordionContent>
 						{data.comments.map((comment, index) => (
-							<div className="px-5 gap-y-4">
+							<div className="px-5 gap-y-4" key={comment.id}>
 								<div className="flex justify-between items-center ">
 									<p className="text-xl font-semibold ">{comment.username}</p>
 									<p className="text-xs font-semibold text-muted-foreground">

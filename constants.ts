@@ -23,7 +23,7 @@ export const routes = [
 	},
 	{
 		label: "Sửa chữa nhà",
-		href: "/sua-chua-nha",
+		href: "/tin-tuc?category_slug=dich-vu-sua-chua-nha",
 	},
 	{
 		label: "Thông nghẹt",
@@ -35,7 +35,7 @@ export const routes = [
 	},
 	{
 		label: "Điện lạnh",
-		href: "/dien-lanh",
+		href: "/tin-tuc?category_slug=dich-vu-djien-lanh",
 	},
 	{
 		label: "Khuyến mãi",

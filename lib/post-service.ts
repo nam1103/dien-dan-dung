@@ -25,6 +25,9 @@ export const getPosts = async (
 						slug: category_slug,
 					},
 				},
+				include: {
+					category: true,
+				},
 				orderBy: { createdAt: order || "asc" },
 			});
 		} else {
@@ -33,6 +36,9 @@ export const getPosts = async (
 					title: {
 						contains: title || "",
 					},
+				},
+				include: {
+					category: true,
 				},
 				orderBy: { createdAt: order || "asc" },
 			});

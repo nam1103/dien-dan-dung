@@ -5,6 +5,7 @@ import { db } from "./db";
 import { categorySchema } from "./schemas";
 import slugify from "slugify";
 import * as z from "zod";
+import { removeDiacritics } from "./utils";
 
 export const getCategories = async () => {
 	try {
@@ -26,7 +27,7 @@ export const createCategory = async (
 			return { status: 401 };
 		}
 
-		let slug = slugify(result.data.title);
+		let slug = slugify(result.data.title, { lower: true });
 		const numberOfCategoryStartWithSlug = await db.category.count({
 			where: {
 				slug: {

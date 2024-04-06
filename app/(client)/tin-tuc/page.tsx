@@ -12,7 +12,7 @@ interface TinTucPageProps {
 }
 
 const TinTucPage = async ({ searchParams }: TinTucPageProps) => {
-	const data = await getPosts("asc", searchParams.category_slug);
+	const data = await getPosts("asc", "", searchParams.category_slug);
 	const categories = await getCategories();
 
 	return (

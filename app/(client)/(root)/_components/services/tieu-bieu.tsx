@@ -19,7 +19,10 @@ export const TieuBieu = ({ posts }: TieuBieuProps) => {
 
 			<div className="grid gap-x-2 gap-y-3 grid-cols-2 md:grid-cols-3 self-center">
 				{posts.map((post) => (
-					<div className="w-full space-y-1 hover:-translate-y-3 duration-300 transition-transform transform">
+					<div
+						key={post.id}
+						className="w-full space-y-1 hover:-translate-y-3 duration-300 transition-transform transform"
+					>
 						<Link
 							className="w-full object-center object-contain relative "
 							href={`/tin-tuc/${post.slug}`}

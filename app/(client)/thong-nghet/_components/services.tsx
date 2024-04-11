@@ -3,16 +3,11 @@ import { Separator } from "@/components/ui/separator";
 import { Gem } from "lucide-react";
 
 const services = [
-	"CHỐNG THẤM TƯỜNG, TRẦN NHÀ, WC",
-	"CHỐNG THẤM NHÀ VỆ SINH, BAN CÔNG",
-	"CHỐNG THẤM SÂN THƯỢNG",
-	"Ổ CẮM, CB, CẦU DAO",
-	,
-	"XỬ LÝ TRẦN NHÀ BỊ NỨT THẤM NƯỚC | TRẦN NHÀ BỊ THẤM NƯỚC",
-	,
-	"DỊCH VỤ CHỐNG THẤM TƯỜNG NHÀ TẠI HỒ CHÍ MINH",
-	,
-	"DỊCH VỤ VÀ HƯỚNG DẪN CÁCH CHỐNG THẤM BAN CÔNG ĐÚNG QUY TRÌNH",
+	"HÚT HẦM CẦU, BỂ PHỐT",
+	"THÔNG TẮC THOÁT SÀN, ỐNG THOÁT NƯỚC THẢI",
+	"THÔNG NGHẸT WC, BỒN CẦU, LAVABO, CHẬU RỬA CHÉN,…",
+	"SỬA BỒN CẦU BỊ TẮC TẠI NHÀ – SỬA BỒN CẦU BỊ NGHẸT GIÁ RẺ",
+	"THÔNG CỐNG NGHẸT GIÁ RẺ TẠI NHÀ TPHCM",
 ];
 
 export const Services = () => {
@@ -22,9 +17,9 @@ export const Services = () => {
 				innerClassName="flex flex-col items-center"
 				className="bg-yellow-50 py-5"
 			>
-				<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md">
-					CÁO PHÚC DỊCH VỤ SỬA CHỬA ĐIỆN, NƯỚC, THÔNG NGHẸT, CHỐNG THẤM CHUYÊN
-					NGHIỆP NHẤT TẠI NHÀ SỐ 1 VIỆT NAM
+				<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md uppercase">
+					ServiceHome DỊCH VỤ SỬA CHỬA ĐIỆN, NƯỚC, THÔNG NGHẸT, CHỐNG THẤM
+					CHUYÊN NGHIỆP NHẤT TẠI NHÀ SỐ 1 VIỆT NAM
 				</h2>
 				<div className="bg-red-400 w-full max-w-[500px] p-5 mt-5">
 					<div className="bg-red-500 text-white font-semibold text-center p-2 mb-3">

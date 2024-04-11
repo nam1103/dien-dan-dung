@@ -10,8 +10,8 @@ export const Commitment = () => {
 			>
 				<div className="w-full flex flex-col items-center">
 					<h1 className="font-semibold md:text-3xl text-xl drop-shadow-md text-yellow-500">
-						ĐỘI NGŨ CHỐNG THẤM CHUYÊN NGHIỆP VÀ CAO CẤP, HIỆN ĐẠI NHẤT TẠI CÁO
-						PHÚC
+						ĐỘI NGŨ THÔNG NGHẸT CHUYÊN NGHIỆP VÀ CAO CẤP, HIỆN ĐẠI NHẤT TẠI
+						SERVICEHOME
 					</h1>
 					<div className="relative w-full py-3">
 						<div className="border-[0.3px] max-w-[650px] mx-auto w-full border-black"></div>
@@ -33,7 +33,7 @@ export const Commitment = () => {
 						đồng hành với bạn để cuộc sống thêm trọn vẹn.
 					</p>
 					<p className="text-sm font-light self-start mt-1">
-						Mọi dịch vụ của cáo phúc đều hướng tới sự chất lượng. Từ đó nhằm
+						Mọi dịch vụ của ServiceHome đều hướng tới sự chất lượng. Từ đó nhằm
 						mang lại cho bạn sự tuyệt vời để giúp bạn hưởng trọn tiện nghi trong
 						chính không gian của mình.
 					</p>
@@ -47,22 +47,22 @@ export const Commitment = () => {
 				</div>
 				<div className="grid grid-cols-2 gap-x-1">
 					<ImageModal
-						src="/chong-tham1.png"
+						src="/thong-nghet1.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham2.png"
+						src="/thong-nghet2.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham3.png"
+						src="/thong-nghet3.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham4.png"
+						src="/thong-nghet4.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>

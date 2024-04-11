@@ -38,7 +38,7 @@ export const Services = ({ categories }: ServicesProps) => {
 				<div className="border-l-4 border-l-orange-500" />
 				<h2 className="uppercase text-2xl text-white">Dịch vụ</h2>
 			</div>
-			{categories.slice(0, 10).map((category) => (
+			{categories.map((category) => (
 				<div
 					key={category.id}
 					className="group cursor-pointer flex items-center gap-x-4 py-1"

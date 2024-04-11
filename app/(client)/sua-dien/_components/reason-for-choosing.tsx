@@ -12,8 +12,8 @@ export const ReasonForChoosing = () => {
 
 	return (
 		<Container innerClassName="flex flex-col items-center gap-y-5">
-			<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md">
-				TẠI SAO NÊN CHỌN DỊCH VỤ SỬA ĐIỆN TẠI CÁO PHÚC
+			<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md uppercase">
+				TẠI SAO NÊN CHỌN DỊCH VỤ SỬA ĐIỆN TẠI ServiceHome
 			</h2>
 			<div className="grid sm:grid-cols-2 grid-cols-1 md:px-11 px-8 gap-y-4 gap-x-7">
 				<div className="space-y-4 ">

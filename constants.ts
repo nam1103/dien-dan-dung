@@ -5,7 +5,7 @@ export const contactInfo = {
 };
 
 export const appInfo = {
-	name: "Sửa điện Cáo Phúc",
+	name: "Sửa điện ServiceHome",
 };
 
 export const routes = [
@@ -20,10 +20,6 @@ export const routes = [
 	{
 		label: "Sửa nước",
 		href: "/sua-nuoc",
-	},
-	{
-		label: "Sửa chữa nhà",
-		href: "/tin-tuc?category_slug=dich-vu-sua-chua-nha",
 	},
 	{
 		label: "Thông nghẹt",

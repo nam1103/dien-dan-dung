@@ -5,11 +5,16 @@ import { db } from "./db";
 import { categorySchema } from "./schemas";
 import slugify from "slugify";
 import * as z from "zod";
-import { removeDiacritics } from "./utils";
 
 export const getCategories = async () => {
 	try {
-		const categories = await db.category.findMany({});
+		const categories = await db.category.findMany({
+			orderBy: {
+				posts: {
+					_count: "desc",
+				},
+			},
+		});
 
 		return categories;
 	} catch (error) {

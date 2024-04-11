@@ -22,9 +22,9 @@ export const Services = () => {
 				innerClassName="flex flex-col items-center"
 				className="bg-yellow-50 py-5"
 			>
-				<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md">
-					CÁO PHÚC DỊCH VỤ SỬA CHỬA ĐIỆN, NƯỚC, THÔNG NGHẸT, CHỐNG THẤM CHUYÊN
-					NGHIỆP NHẤT TẠI NHÀ SỐ 1 VIỆT NAM
+				<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md uppercase">
+					ServiceHome DỊCH VỤ SỬA CHỬA ĐIỆN, NƯỚC, THÔNG NGHẸT, CHỐNG THẤM
+					CHUYÊN NGHIỆP NHẤT TẠI NHÀ SỐ 1 VIỆT NAM
 				</h2>
 				<div className="bg-red-400 w-full max-w-[500px] p-5 mt-5">
 					<div className="bg-red-500 text-white font-semibold text-center p-2 mb-3">

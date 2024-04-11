@@ -6,7 +6,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Cáo Phúc Lắp Đặt Sửa chữa điện dân dụng",
+	title: "ServiceHome Lắp Đặt Sửa chữa điện dân dụng",
 	description: "Dịch vụ uy tín, giá cảả hợp lý hàng đầu Việt Nam",
 };
 

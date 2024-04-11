@@ -8,6 +8,10 @@ interface OngNuocProps {
 }
 
 export const OngNuoc = ({ posts }: OngNuocProps) => {
+	if (!posts.length) {
+		return null;
+	}
+
 	return (
 		<div className="w-full flex flex-col">
 			<div className="flex gap-x-2 mb-4">
@@ -41,7 +45,7 @@ export const OngNuoc = ({ posts }: OngNuocProps) => {
 				))}
 			</div>
 			<Link
-				href="/tin-tuc?category_slug=dich-vu-sua-chua-djien-tieu-bieu"
+				href="/tin-tuc?category_slug=dich-vu-sua-djuong-ong-nuoc-chinh"
 				className=" self-center mt-5"
 			>
 				<Button

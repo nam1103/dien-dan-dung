@@ -29,8 +29,9 @@ export const CustomerRating = () => {
 							<RiStarSFill className="fill-yellow-500 h-6 w-6" />
 						</div>
 						<p className="italic mx-7 text-center text-sm font-light text-neutral-500">
-							Mình hài lòng với dịch vụ của bên Cáo Phúc. Đặc biệt là cách làm
-							việc và chăm sóc khách hàng mọi lúc, mọi nơi. Cảm ơn Cáo Phúc!
+							Mình hài lòng với dịch vụ của bên ServiceHome. Đặc biệt là cách
+							làm việc và chăm sóc khách hàng mọi lúc, mọi nơi. Cảm ơn
+							ServiceHome!
 						</p>
 
 						<h2 className="font-light text-neutral-400">
@@ -51,7 +52,7 @@ export const CustomerRating = () => {
 						</div>
 						<p className="italic mx-7 text-center text-sm font-light text-neutral-500">
 							Mấy ngày trước nhà mình cũng bị cúp điện, mất nước, lại nhờ đền
-							dịch vụ của Cáo Phúc. Mình ưng cái là mới gọi là có mặt ngay.
+							dịch vụ của ServiceHome. Mình ưng cái là mới gọi là có mặt ngay.
 						</p>
 
 						<h2 className="font-light text-neutral-400">
@@ -73,8 +74,8 @@ export const CustomerRating = () => {
 							<RiStarSFill className="fill-yellow-500 h-6 w-6" />
 						</div>
 						<p className="italic mx-7 text-center text-sm font-light text-neutral-500">
-							Cảm ơn dịch vụ của Cáo Phúc. Giá cả hợp lí, phục vụ tận tình, xứng
-							đáng 5 sao!
+							Cảm ơn dịch vụ của ServiceHome. Giá cả hợp lí, phục vụ tận tình,
+							xứng đáng 5 sao!
 						</p>
 
 						<h2 className="font-light text-neutral-400">

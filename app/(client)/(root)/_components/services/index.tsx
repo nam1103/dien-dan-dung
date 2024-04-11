@@ -3,6 +3,8 @@ import { getPosts } from "@/lib/post-service";
 import { Category, Post } from "@prisma/client";
 import { TieuBieu } from "./tieu-bieu";
 import { OngNuoc } from "./ong-nuoc";
+import { ChongTham } from "./chong-tham";
+import { ThongNghet } from "./thong-nghet";
 
 export const Services = async () => {
 	const posts = (await getPosts("asc", "")) as (Post & {
@@ -11,6 +13,8 @@ export const Services = async () => {
 
 	const tieubieuPosts = [] as Post[];
 	const ongnuocPosts = [] as Post[];
+	const chongthamPosts = [] as Post[];
+	const thongnghetPosts = [] as Post[];
 
 	posts.forEach((post) => {
 		if (
@@ -23,6 +27,11 @@ export const Services = async () => {
 			ongnuocPosts.length < 6
 		) {
 			ongnuocPosts.push(post);
+		} else if (
+			post?.category?.slug === "dich-vu-chong-tham" &&
+			ongnuocPosts.length < 6
+		) {
+			ongnuocPosts.push(post);
 		}
 	});
 
@@ -31,6 +40,8 @@ export const Services = async () => {
 			<div className="w-full py-10 px-7 md:px-10 lg:px-14 xl:px-20 space-y-10">
 				<TieuBieu posts={tieubieuPosts} />
 				<OngNuoc posts={ongnuocPosts} />
+				<ChongTham posts={chongthamPosts} />
+				<ThongNghet posts={thongnghetPosts} />
 			</div>
 		</Container>
 	);

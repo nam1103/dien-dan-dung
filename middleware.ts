@@ -7,6 +7,8 @@ export default auth((req) => {
 	const { nextUrl } = req;
 	const isAuthorized = !!req.auth;
 
+	console.log(nextUrl);
+
 	if (nextUrl.pathname === "/dang-nhap" && isAuthorized) {
 		return Response.redirect(new URL("/quan-tri-vien", nextUrl));
 	}

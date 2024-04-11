@@ -3,11 +3,11 @@ import { Post } from "@prisma/client";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
-interface TieuBieuProps {
+interface ThongNghetProps {
 	posts: Post[];
 }
 
-export const TieuBieu = ({ posts }: TieuBieuProps) => {
+export const ThongNghet = ({ posts }: ThongNghetProps) => {
 	if (!posts.length) {
 		return null;
 	}
@@ -17,7 +17,7 @@ export const TieuBieu = ({ posts }: TieuBieuProps) => {
 			<div className="flex gap-x-2 mb-4">
 				<div className=" border-l-[6px] border-l-red-500" />
 				<h2 className="uppercase text-2xl text-red-500 font-semibold">
-					Dịch vụ sửa điện tiêu biểu
+					DỊCH VỤ THÔNG NGHẸT
 				</h2>
 			</div>
 
@@ -45,7 +45,7 @@ export const TieuBieu = ({ posts }: TieuBieuProps) => {
 				))}
 			</div>
 			<Link
-				href="/tin-tuc?category_slug=dich-vu-sua-chua-djien-tieu-bieu"
+				href="/tin-tuc?category_slug=dich-vu-thong-nghet-tai-nha"
 				className=" self-center mt-5"
 			>
 				<Button

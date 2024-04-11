@@ -12,11 +12,11 @@ export const Footer = async () => {
 			<Container>
 				<div className="grid sm:grid-cols-7 py-5 grid-cols-1 gap-4 px-7 md:px-12 lg:px-20 xl:px-28">
 					<InfoSection />
-					<Services categories={categories} />
+					<Services categories={categories.slice(0, 10)} />
 					<Contact />
 				</div>
 				<p className="-mt-5 text-sm text-white px-7 md:px-12 lg:px-20 xl:px-28 pb-8">
-					©Copyright 2022 Cáo Phúc | Trợ Thủ Số 1 Cho Ngôi Nhà Bạn!
+					©Copyright 2022 ServiceHome | Trợ Thủ Số 1 Cho Ngôi Nhà Bạn!
 				</p>
 			</Container>
 		</div>

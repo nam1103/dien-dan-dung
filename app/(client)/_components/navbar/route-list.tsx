@@ -28,7 +28,7 @@ export const RouteList = () => {
 		<div
 			className={cn(
 				"hidden lg:flex h-[70px] justify-center bg-neutral-700 items-center px-5 z-[30]",
-				isFixed && "fixed"
+				isFixed && "fixed w-screen"
 			)}
 		>
 			{routes.map(({ label, href }) => (

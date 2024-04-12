@@ -19,13 +19,13 @@ import {
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
 import { loginSchema } from "@/lib/schemas";
-import { loginUser } from "@/lib/user-service";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Eye, EyeOff } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import axios, { AxiosError } from "axios";
 
 export const LoginForm = () => {
 	const [isPasswordHidden, setIsPasswordHidden] = useState(true);
@@ -37,10 +37,13 @@ export const LoginForm = () => {
 	});
 
 	const onSubmit = async (values: z.infer<typeof loginSchema>) => {
-		const response = await loginUser(values);
-
-		if (response?.error) {
-			toast.error(response.error);
+		try {
+			await axios.post("/api/login", values);
+			router.push("/quan-tri-vien");
+		} catch (error) {
+			if (axios.isAxiosError(error)) {
+				toast.error(error?.response?.data.error);
+			}
 		}
 	};
 

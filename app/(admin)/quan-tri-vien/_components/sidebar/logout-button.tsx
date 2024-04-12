@@ -3,10 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { logoutUser } from "@/lib/user-service";
 import { LogOut } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export const LogoutButton = () => {
-	const onClick = async () => {
-		await logoutUser();
+	const router = useRouter();
+
+	const onClick = () => {
+		logoutUser();
+		router.push("/dang-nhap");
 	};
 
 	return (

@@ -2,43 +2,10 @@
 
 import { db } from "./db";
 import bcrypt from "bcryptjs";
-import * as z from "zod";
-import { loginSchema } from "./schemas";
-import { signIn, signOut } from "@/auth";
-import { AuthError } from "next-auth";
+import jwt from "jsonwebtoken";
+
 import { revalidatePath } from "next/cache";
-
-export const loginUser = async (values: z.infer<typeof loginSchema>) => {
-	const validatedFields = loginSchema.safeParse(values);
-
-	if (!validatedFields.success) {
-		return { error: "Thông tin không hợp lệ!" };
-	}
-
-	const { email, password } = validatedFields.data;
-
-	try {
-		await signIn("credentials", {
-			email,
-			password,
-			redirectTo: "/quan-tri-vien",
-		});
-	} catch (error) {
-		if (error instanceof AuthError) {
-			switch (error.type) {
-				case "CredentialsSignin":
-					return { error: "Email hoặc mật khẩu không chính xác!" };
-				default:
-					return { error: "Một sự cố đã xảy ra!" };
-			}
-		}
-		throw error;
-	}
-};
-
-export const logoutUser = async (redirectTo = "/dang-nhap") => {
-	await signOut({ redirectTo });
-};
+import { cookies } from "next/headers";
 
 export const createUser = async (values: {
 	email: string;
@@ -153,4 +120,32 @@ export const changePassword = async (
 		console.log(error);
 		return 500;
 	}
+};
+
+export const getUserData = async () => {
+	try {
+		const token = cookies().get("token");
+
+		if (!token) {
+			return null;
+		}
+		// Verify JWT token
+		const decoded = jwt.verify(token.value, process.env.JWT_SECRET!) as {
+			id: string;
+		};
+		// Here, you can fetch additional user data based on the decoded token
+		if (!decoded.id) {
+			return null;
+		}
+
+		const user = await getUserById(decoded.id);
+
+		return user;
+	} catch (error) {
+		return null;
+	}
+};
+
+export const logoutUser = () => {
+	cookies().delete("token");
 };

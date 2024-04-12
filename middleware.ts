@@ -1,11 +1,9 @@
-import NextAuth from "next-auth";
-import { authConfig } from "./auth";
+import { cookies } from "next/headers";
+import { NextRequest, NextResponse } from "next/server";
 
-const { auth } = NextAuth(authConfig);
-
-export default auth((req) => {
-	const { nextUrl } = req;
-	const isAuthorized = !!req.auth;
+export function middleware(request: NextRequest) {
+	const { nextUrl } = request;
+	const isAuthorized = !!cookies().get("token");
 
 	if (nextUrl.pathname === "/dang-nhap" && isAuthorized) {
 		return Response.redirect(new URL("/quan-tri-vien", nextUrl));
@@ -14,7 +12,7 @@ export default auth((req) => {
 	if (nextUrl.pathname.startsWith("/quan-tri-vien") && !isAuthorized) {
 		return Response.redirect(new URL("/dang-nhap", nextUrl));
 	}
-});
+}
 
 // Optionally, don't invoke Middleware on some paths
 export const config = {

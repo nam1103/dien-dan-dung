@@ -29,9 +29,14 @@ export const Services = async () => {
 			ongnuocPosts.push(post);
 		} else if (
 			post?.category?.slug === "dich-vu-chong-tham" &&
-			ongnuocPosts.length < 6
+			chongthamPosts.length < 6
 		) {
-			ongnuocPosts.push(post);
+			chongthamPosts.push(post);
+		} else if (
+			post?.category?.slug === "dich-vu-thong-nghet-tai-nha" &&
+			thongnghetPosts.length < 6
+		) {
+			thongnghetPosts.push(post);
 		}
 	});
 

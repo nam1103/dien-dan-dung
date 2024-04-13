@@ -5,7 +5,12 @@ export const InfoSection = () => {
 	return (
 		<div className="col-span-3 space-y-5">
 			<div className="relative w-[150px] aspect-[134/88]">
-				<Image fill alt="Logo" src="/logo.png" />
+				<Image
+					fill
+					alt="Logo"
+					src="/logo.png"
+					className="invert brightness-0"
+				/>
 			</div>
 			<p className="text-white text-sm max-w-[300px]">
 				Giải pháp dẫn đầu trên thị trường cho các vấn đề sửa chữa điện nước, bảo

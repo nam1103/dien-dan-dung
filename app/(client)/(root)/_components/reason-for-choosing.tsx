@@ -11,7 +11,7 @@ export const ReasonForChoosing = () => {
 					<div className="w-fit text-white absolute right-1/2 translate-x-1/2 bg-yellow-500 px-5 top-1/2 -translate-y-1/2 flex items-center gap-x-3">
 						<Heart className="h-6 w-6" />
 						<span className="md:text-xl text-lg truncate uppercase">
-							Lý do chọn HomeServices
+							Lý do chọn Home Services
 						</span>
 					</div>
 				</div>
@@ -22,7 +22,7 @@ export const ReasonForChoosing = () => {
 							Đa dạng dịch vụ
 						</h2>
 						<p className="text-center text-white mt-2">
-							Điện dân dụng HomeServices cung cấp đầy đủ các dịch vụ sửa chữa
+							Điện dân dụng Home Services cung cấp đầy đủ các dịch vụ sửa chữa
 							thiết yếu cho hộ gia đình, công ty…chỉ với một lần gọi.
 						</p>
 					</div>
@@ -64,7 +64,7 @@ export const ReasonForChoosing = () => {
 							Bảo hành chu đáo
 						</h2>
 						<p className="text-center text-white mt-2">
-							Các dịch vụ của HomeServices cung cấp đều có thời gian bảo hành
+							Các dịch vụ của Home Services cung cấp đều có thời gian bảo hành
 							lên đến 12 tháng, đảm báo khách hàng an tâm và hài lòng.
 						</p>
 					</div>

@@ -11,7 +11,7 @@ export const Commitment = () => {
 				<div className="w-full flex flex-col items-center">
 					<h1 className="font-semibold md:text-3xl text-xl drop-shadow-md text-yellow-500 uppercase">
 						ĐỘI NGŨ SỬA CHỮA NƯỚC CHUYÊN NGHIỆP VÀ CAO CẤP, HIỆN ĐẠI NHẤT TẠI
-						HomeServices
+						Home Services
 					</h1>
 					<div className="relative w-full py-3">
 						<div className="border-[0.3px] max-w-[650px] mx-auto w-full border-black"></div>
@@ -33,9 +33,9 @@ export const Commitment = () => {
 						đồng hành với bạn để cuộc sống thêm trọn vẹn.
 					</p>
 					<p className="text-sm font-light self-start mt-1">
-						Mọi dịch vụ của HomeServices đều hướng tới sự chất lượng. Từ đó nhằm
-						mang lại cho bạn sự tuyệt vời để giúp bạn hưởng trọn tiện nghi trong
-						chính không gian của mình.
+						Mọi dịch vụ của Home Services đều hướng tới sự chất lượng. Từ đó
+						nhằm mang lại cho bạn sự tuyệt vời để giúp bạn hưởng trọn tiện nghi
+						trong chính không gian của mình.
 					</p>
 					<p className="text-sm font-light self-start mt-1">
 						Cam kết mọi chi phí cho mỗi dịch vụ đều được báo giá chuẩn xác, rõ

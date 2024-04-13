@@ -6,7 +6,7 @@ export const Header = () => {
 			<div className="flex gap-x-3 items-center text-neutral-800">
 				<Coins className="h-6 w-6" />
 				<span className="uppercase md:text-xl text-lg font-medium">
-					Bảng Giá của ĐIỆN Dân dụng HomeServices
+					Bảng Giá của ĐIỆN Dân dụng Home Services
 				</span>
 			</div>
 			<div className="border-b-2" />

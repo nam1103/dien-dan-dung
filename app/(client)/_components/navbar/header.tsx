@@ -60,7 +60,7 @@ export const Header = () => {
 				<div className="w-full">
 					<div className="bg-neutral-300 h-[55px] items-center flex justify-center relative">
 						<h2 className="uppercase text-lg font-medium">
-							Công ty q HomeServices
+							Công ty q Home Services
 						</h2>
 						<div className="h-full absolute right-10 flex">
 							<div className="w-0 h-0 border-solid border-red small-triangle-1"></div>

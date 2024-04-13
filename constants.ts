@@ -5,7 +5,7 @@ export const contactInfo = {
 };
 
 export const appInfo = {
-	name: "Sửa điện ServiceHome",
+	name: "Sửa điện HomeServices",
 };
 
 export const routes = [

@@ -23,7 +23,7 @@ export const Services = () => {
 				className="bg-yellow-50 py-5"
 			>
 				<h2 className="md:text-3xl text-xl max-w-[900px] px-10 text-center font-semibold text-yellow-400 drop-shadow-md uppercase">
-					ServiceHome LÀ DỊCH VỤ SỬA NƯỚC SỐ 1 VIỆT NAM
+					HomeServices LÀ DỊCH VỤ SỬA NƯỚC SỐ 1 VIỆT NAM
 				</h2>
 				<div className="bg-red-400 w-full max-w-[500px] p-5 mt-5">
 					<div className="bg-red-500 text-white font-semibold text-center p-2 mb-3">

@@ -11,12 +11,14 @@ export const Introduction = () => {
 					<p className="text-xl italic font-light">Giới thiệu về</p>
 					<div className="flex items-center gap-x-2">
 						<h1 className="text-4xl text-red-500 font-semibold font-mono -ml-1 drop-shadow-md">
-							ServiceHome
+							HomeServices
 						</h1>
 						<div className="border-b-[1px] flex-1 h-0 border-neutral-700" />
 					</div>
 					<div className="font-light mt-5">
-						<p>ServiceHome là dịch vụ sửa điện nước uy tín hàng đầu Việt Nam</p>
+						<p>
+							HomeServices là dịch vụ sửa điện nước uy tín hàng đầu Việt Nam
+						</p>
 						<p className="mt-2">
 							Đội ngũ làm việc giàu kinh nghiệm, tham gia vào hàng trăm dự án
 							cao cấp.

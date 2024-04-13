@@ -6,7 +6,7 @@ export const Header = () => {
 			<div className="flex gap-x-3 items-center text-neutral-800">
 				<Newspaper className="h-6 w-6" />
 				<span className="uppercase md:text-xl text-lg font-medium">
-					Tin Tức Của ServiceHome
+					Tin Tức Của HomeServices
 				</span>
 			</div>
 			<div className="border-b-2" />

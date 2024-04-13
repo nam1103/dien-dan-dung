@@ -6,7 +6,7 @@ export const Header = () => {
 			<div className="flex gap-x-3 items-center text-neutral-800">
 				<Mail className="h-6 w-6" />
 				<span className="uppercase md:text-xl text-lg font-medium">
-					LIÊN HỆ VỚI ĐIỆN Dân dụng ServiceHome
+					LIÊN HỆ VỚI ĐIỆN Dân dụng HomeServices
 				</span>
 			</div>
 			<div className="border-b-2" />

@@ -26,7 +26,7 @@ const Map = () => {
 			<TileLayer attribution={attribution} url={url} />
 			{/* @ts-ignore */}
 			<Marker position={[10.81905, 106.63338]} icon={markerIcon}>
-				<Popup>Điện dân dụng ServiceHome</Popup>
+				<Popup>Điện dân dụng HomeServices</Popup>
 			</Marker>
 		</MapContainer>
 	);

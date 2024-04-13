@@ -2,16 +2,21 @@ import { Header } from "./_components/header";
 import { EmailSettingsSection } from "./_components/email-section";
 import { AccountInfoSection } from "./_components/account-info-section";
 import { getUserData } from "@/lib/user-service";
+import { redirect } from "next/navigation";
 
 const SettingsPage = async () => {
 	const user = await getUserData();
 
+	if (!user) {
+		redirect("/dang-nhap");
+	}
+
 	return (
 		<div className="lg:px-14 md:px-10 sm:px-7 px-5 max-w-[700px] pb-20">
 			<Header />
-			<EmailSettingsSection user={user!} />
+			<EmailSettingsSection user={user} />
 
-			<AccountInfoSection user={user!} />
+			<AccountInfoSection user={user} />
 		</div>
 	);
 };

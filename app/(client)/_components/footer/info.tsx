@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const InfoSection = () => {
 	return (
-		<div className="col-span-3 space-y-5">
+		<div className="col-span-4 space-y-5">
 			<div className="relative w-[150px] aspect-[134/88]">
 				<Image
 					fill

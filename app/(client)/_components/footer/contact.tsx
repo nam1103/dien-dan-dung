@@ -13,7 +13,7 @@ export const Contact = () => {
 		<div className="col-span-2">
 			<div className="flex gap-x-2">
 				<div className="border-l-4 border-l-orange-500" />
-				<h2 className="uppercase text-2xl text-white">Liên hệ tư vấn</h2>
+				<h2 className="uppercase text-lg text-white">Liên hệ tư vấn</h2>
 			</div>
 			<h2
 				onClick={handleCall}
@@ -27,15 +27,15 @@ export const Contact = () => {
 			<Button
 				variant="outline"
 				size="lg"
-				className="mt-4 uppercase"
+				className="mt-4 uppercase w-full max-w-[300px]"
 				onClick={handleCall}
 			>
 				Liên hệ ngay
 			</Button>
 			<div className="text-yellow-400 flex flex-col font-light mt-6 text-sm">
-				<Link href="/dieu-khoang-su-dung">Điều khoản sử dụng</Link>
-				<Link href="/chinh-sach-bao-hanh">Chính sách bảo hành</Link>
-				<Link href="/chin-sach-bao-mat">Chính sách bảo mật</Link>
+				<Link href="#">Điều khoản sử dụng</Link>
+				<Link href="#">Chính sách bảo hành</Link>
+				<Link href="#">Chính sách bảo mật</Link>
 			</div>
 		</div>
 	);

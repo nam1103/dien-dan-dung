@@ -7,10 +7,21 @@ export const Contact = () => {
 			<h1 className="uppercase md:text-2xl text-xl font-medium text-neutral-800">
 				Điện dân dụng Home Services
 			</h1>
-			<ul className="list-disc text-red-500 ml-4 space-y-2 text-lg">
-				<li>Hotline: {contactInfo.hotline}</li>
-				<li>Hotline dự phòng: {contactInfo.secondary}</li>
-				<li>Trụ sở TP.HCM: {addresses.office}</li>
+			<ul className="list-disc text-red-500 ml-4">
+				<li>
+					<strong>Hotline</strong>: {contactInfo.hotline}
+				</li>
+				<li>
+					<strong>Hotline dự phòng</strong>: {contactInfo.secondary}
+				</li>
+				<li>
+					<strong>Trụ sở TP.HCM</strong>: {addresses.office}
+				</li>
+				{addresses.brands.map((address, index) => (
+					<li className="break-before-avoid text-sm break-after-avoid">
+						<strong>CN{index + 1}</strong>: {address}
+					</li>
+				))}
 			</ul>
 			<ContactForm />
 		</div>

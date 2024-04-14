@@ -52,5 +52,19 @@ export const routes = [
 ];
 
 export const addresses = {
-	office: "Số 2A Nguyễn Sỹ Sách, P15, Quận Tân Bình, Tp.HCM",
+	office: "Số 2A Nguyễn Sỹ Sách, P15, Q.Tân Bình, Tp.HCM",
+	brands: [
+		"114/61 A Lý Chính Thắng, Phường 9, Q.3",
+		"689/12 Nguyễn Sỹ Sách, F15, Quận Tân Bình",
+		"80/17 Đường số 9, P5, Q.Gò Vấp",
+		"2A Nguyễn Sỹ Sách, P15, Q.Tân Bình",
+		"Đường 154, Chung cư Topaz, P Tân Phú, Q.9",
+		"10 Đồng Nai, P2, Q.Tân Bình",
+		"413/42/14 Lê Văn Quới, P Bình Trị Đông A, Q.Bình Tân",
+		"860/60S Xô Viết Nghệ Tĩnh, P25, Q.Bình Thạnh",
+		"480/1 xô viết nghệ tĩnh p25 Q.Bình Thạnh",
+		"105 Đường Yersin, P Cầu Ông Lãnh, Q.1",
+		"205/11 Nguyễn Kiệm, P7, Q.Gò Vấp",
+		"102 Phan Văn Hớn, Tân Thới Nhất, Q.12",
+	],
 };

@@ -33,10 +33,10 @@ export const Services = ({ categories }: ServicesProps) => {
 	};
 
 	return (
-		<div className="col-span-2">
+		<div className="col-span-3">
 			<div className="flex gap-x-2 mb-2">
 				<div className="border-l-4 border-l-orange-500" />
-				<h2 className="uppercase text-2xl text-white">Dịch vụ</h2>
+				<h2 className="uppercase text-lg text-white">Dịch vụ</h2>
 			</div>
 			{categories.map((category) => (
 				<div
@@ -45,7 +45,7 @@ export const Services = ({ categories }: ServicesProps) => {
 					onClick={() => onCategoryClick(category.slug)}
 				>
 					<ArrowRight className="h-5 w-5 text-orange-500 shrink-0" />
-					<p className="uppercase text-white break-words group-hover:text-orange-500">
+					<p className="uppercase text-white break-words text-sm group-hover:text-orange-500">
 						{category.title}
 					</p>
 				</div>

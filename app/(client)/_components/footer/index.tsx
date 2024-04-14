@@ -16,7 +16,8 @@ export const Footer = async () => {
 					<Contact />
 				</div>
 				<p className="-mt-5 text-sm text-white px-7 md:px-12 lg:px-20 xl:px-28 pb-8">
-					©Copyright 2024 Home Services | Trợ Thủ Số 1 Cho Ngôi Nhà Bạn!
+					©Copyright 2024 Home Services | Dịch Vụ Sửa Chữa Số 1 Cho Ngôi Nhà
+					Bạn!
 				</p>
 			</Container>
 		</div>

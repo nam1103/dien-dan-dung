@@ -53,10 +53,10 @@ export const ReasonForChoosing = () => {
 				GỌI NGAY ĐỂ ĐƯỢC TƯ VẤN
 			</Button>
 			<p className="text-xs text-muted-foreground max-w-[900px] px-10 text-center">
-				Đội ngũ thợ có bằng cấp hoặc đã qua kiểm tra tay nghề và đào tạo kỹ
-				năng. Họ có kinh nghiệm nhiều năm và tuân thủ các quy trình chuẩn mực.
-				Đội ngũ này có kinh nghiệm phong phú với 52 kỹ thuật xuất phát từ các dự
-				án 5 sao, biệt thự và khu nghỉ dưỡng cao cấp.
+				Đội ngũ thợ có bằng cấp hoặc đã qua kiểm tra tay nghề và chuyên môn và
+				đào tạo kỹ năng. Họ có kinh nghiệm nhiều năm thi công điện nước và tham
+				gia các dự án biệt thự, khách sạn, toà nhà văn phòng từ lúc khởi công
+				cho đến hoàn thiện.
 			</p>
 		</Container>
 	);

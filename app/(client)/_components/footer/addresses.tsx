@@ -5,7 +5,7 @@ export const Addresses = () => {
 		<div className="col-span-3">
 			<div className="flex gap-x-2 mb-3">
 				<div className="border-l-4 border-l-orange-500" />
-				<h2 className="uppercase text-lg text-white">Liên hệ tư vấn</h2>
+				<h2 className="uppercase text-lg text-white">Chi nhánh</h2>
 			</div>
 
 			{addresses.brands.map((address, index) => (

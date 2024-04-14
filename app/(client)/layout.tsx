@@ -9,7 +9,7 @@ interface ClientLayoutProps {
 
 const ClientLayout = ({ children }: ClientLayoutProps) => {
 	return (
-		<div className="h-full">
+		<div className="h-full w-full overflow-x-hidden">
 			<SocialButtons />
 			<ScrollBackButton />
 			<Navbar />

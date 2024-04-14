@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const Hero = () => {
 	return (
-		<div className="relative w-full aspect-[1200/500]">
-			<Image alt="hero" src="/hero.png" fill className=" object-fill z-[-1]" />
+		<div className="w-full aspect-video max-h-[500px] bg-center relative mb-5 bg-black">
+			<Image src="/hero.png" alt="" fill className="object-contain" />
 		</div>
 	);
 };

@@ -10,7 +10,7 @@ export const Introduction = () => {
 				<div className="flex-1">
 					<p className="text-xl italic font-light">Giới thiệu về</p>
 					<div className="flex items-center gap-x-2">
-						<h1 className="text-4xl text-red-500 font-semibold font-mono -ml-1 drop-shadow-md">
+						<h1 className="text-4xl text-red-500 font-semibold font-mono -ml-1 drop-shadow-md tracking-tighter">
 							Home Services
 						</h1>
 						<div className="border-b-[1px] flex-1 h-0 border-neutral-700" />

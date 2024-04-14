@@ -9,7 +9,10 @@ export const Addresses = () => {
 			</div>
 
 			{addresses.brands.map((address, index) => (
-				<p className="text-white text-sm break-before-avoid break-after-avoid">
+				<p
+					key={address}
+					className="text-white text-sm break-before-avoid break-after-avoid"
+				>
 					<strong className="text-orange-500">CN{index + 1}</strong>: {address}
 				</p>
 			))}

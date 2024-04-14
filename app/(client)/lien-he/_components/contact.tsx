@@ -18,7 +18,10 @@ export const Contact = () => {
 					<strong>Trụ sở TP.HCM</strong>: {addresses.office}
 				</li>
 				{addresses.brands.map((address, index) => (
-					<li className="break-before-avoid text-sm break-after-avoid">
+					<li
+						key={address}
+						className="break-before-avoid text-sm break-after-avoid"
+					>
 						<strong>CN{index + 1}</strong>: {address}
 					</li>
 				))}

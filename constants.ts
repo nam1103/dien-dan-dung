@@ -1,6 +1,6 @@
 export const contactInfo = {
-	zalo: "0985.766.011",
-	hotline: "0985.766.011",
+	zalo: "0938.469.692",
+	hotline: "0938.469.692",
 	secondary: "0938.469.692",
 };
 

@@ -25,7 +25,7 @@ export const InfoSection = () => {
 				<h2 className="uppercase text-2xl text-white">Giờ làm việc</h2>
 			</div>
 			<p className="text-white text-sm -mt-10">
-				<strong>T2 - CN:</strong> 08am - 9pm
+				<strong>T2 - CN:</strong> 08am - 10pm
 			</p>
 			<div className="border border-neutral-300 max-w-[300px] w-full" />
 		</div>

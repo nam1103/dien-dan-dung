@@ -17,9 +17,9 @@ export const Footer = async () => {
 					<Contact />
 					<Addresses />
 				</div>
-				<p className=" sm:-mt-24 w-full text-sm text-white px-7 md:px-12 lg:px-16 sm:pb-36 pb-10">
-					©Copyright 2024 Home Services | Dịch Vụ Sửa Chữa Số 1 Cho Ngôi Nhà
-					Bạn!
+				<p className=" sm:-mt-20 w-full text-sm text-white px-7 md:px-12 lg:px-16 sm:pb-36 pb-10 max-w-[600px]">
+					©Copyright 2023 Home Services | Dịch Vụ Sửa Chữa Điện Nước Số 1 Cho
+					Ngôi Nhà Bạn!
 				</p>
 			</Container>
 		</div>

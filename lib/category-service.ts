@@ -62,6 +62,17 @@ export const createCategory = async (
 
 export const deleteCategory = async (id: string) => {
 	try {
+		const category = await db.category.findUnique({
+			where: { id },
+			include: {
+				posts: true,
+			},
+		});
+
+		if (category?.posts.length !== 0) {
+			return 500;
+		}
+
 		const postsToUpdate = await db.post.findMany({
 			where: {
 				categoryId: id,

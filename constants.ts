@@ -30,8 +30,8 @@ export const routes = [
 		href: "/chong-tham",
 	},
 	{
-		label: "Điện lạnh",
-		href: "/tin-tuc?category_slug=dich-vu-djien-lanh",
+		label: "Sửa Máy Phát Điện",
+		href: "/tin-tuc?category_slug=dich-vu-sua-chua-bao-tri-may-phat-djien",
 	},
 	{
 		label: "Khuyến mãi",
@@ -60,7 +60,7 @@ export const addresses = {
 		"2A Nguyễn Sỹ Sách, P15, Q.Tân Bình",
 		"Đường 154, Chung cư Topaz, P Tân Phú, Q.9",
 		"10 Đồng Nai, P2, Q.Tân Bình",
-		"413/42/14 Lê Văn Quới, P Bình Trị Đông A, Q.Bình Tân",
+		"47 Đường Số 14, Phường An Lạc, Q.Bình Tân",
 		"860/60S Xô Viết Nghệ Tĩnh, P25, Q.Bình Thạnh",
 		"480/1 Xô Viết Nghệ Tĩnh P25 Q.Bình Thạnh",
 		"105 Đường Yersin, P Cầu Ông Lãnh, Q.1",

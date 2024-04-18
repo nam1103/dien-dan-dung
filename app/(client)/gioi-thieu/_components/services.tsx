@@ -9,6 +9,7 @@ const services = [
 	"THÔNG NGHẸT",
 	"DỊCH VỤ CHỐNG THẤM",
 	"CÁC DỊCH VỤ ĐIỆN LẠNH TIÊU BIỂU",
+	"DỊCH VỤ BẢO TRÌ MÁY PHÁT ĐIỆN",
 ];
 
 export const Services = () => {

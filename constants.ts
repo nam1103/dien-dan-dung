@@ -34,6 +34,10 @@ export const routes = [
 		href: "/tin-tuc?category_slug=dich-vu-sua-chua-bao-tri-may-phat-djien",
 	},
 	{
+		label: "Điện Lạnh",
+		href: "/tin-tuc?category_slug=dich-vu-djien-lanh",
+	},
+	{
 		label: "Khuyến mãi",
 		href: "/khuyen-mai",
 	},

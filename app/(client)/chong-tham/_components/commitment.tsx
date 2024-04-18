@@ -47,22 +47,22 @@ export const Commitment = () => {
 				</div>
 				<div className="grid grid-cols-2 gap-x-1">
 					<ImageModal
-						src="/chong-tham1.png"
+						src="/chong-tham1.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham2.png"
+						src="/chong-tham2.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham3.png"
+						src="/chong-tham3.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
 					<ImageModal
-						src="/chong-tham4.png"
+						src="/chong-tham4.jpg"
 						className=" w-full aspect-square"
 						containerClassName="h-[520px]"
 					/>
